@@ -13,6 +13,6 @@ class Registration
 
     public function register()
     {
-        return $this->phone;
+        return (new RequestValidation())->validation($this->phone);
     }
 }
