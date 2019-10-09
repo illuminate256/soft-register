@@ -1,0 +1,22 @@
+{
+  "name": "illuminate256/soft-register",
+  "homepage": "https://github.com/illuminate256/soft-register",
+  "authors": [
+    {
+      "name": "Dr Nefario"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Illuminate256\\SoftRegister\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Illuminate256\\SoftRegister\\SoftRegisterProvider"
+      ]
+    }
+  }
+}
